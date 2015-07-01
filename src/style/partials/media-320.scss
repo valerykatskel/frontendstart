@@ -1,0 +1,8 @@
+/*screen resolutions lower than 320px*/
+@media all and (max-width: 320px){
+	#some-block{
+		display: none;
+		position: relative;
+		padding: $radius;
+	}
+}
