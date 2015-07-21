@@ -1,5 +1,5 @@
 # frontendstart
-start point for any project (gulp and etc.)
+This is a start point for any project (gulp, html, css, javascript and etc.)
 
 #requirements
 1. node.js
@@ -7,8 +7,8 @@ start point for any project (gulp and etc.)
 3. bower
 
 #setup
-1. clone this repo
-2. run bower i
-3. run npm install
-4. run npm rebuild node-sass
-5. enjoy! 
+1. clone this repo using command "git clone git@github.com:valerykatskel/frontendstart.git"
+2. run command "bower i"
+3. run command "sudo npm i"
+4. run command "npm rebuild"
+5. run command "gulp" and enjoy! 
