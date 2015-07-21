@@ -8,6 +8,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
     cssmin = require('gulp-minify-css'),
+    spritesmith = require('gulp.spritesmith'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
@@ -20,20 +21,25 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
+        favicon: 'build/',
         fonts: 'build/fonts/'
     },
     src: {
         html: 'src/*.html',
         js: 'src/js/main.js',
         style: 'src/style/main.scss',
+        spriteImg: 'src/sprite/*.*',
         img: 'src/img/**/*.*',
+        favicon: 'src/favicon.ico',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
+        spriteImg: 'src/sprite/*.*',
         img: 'src/img/**/*.*',
+        favicon: 'src/favicon.ico',
         fonts: 'src/fonts/**/*.*'
     },
     clean: './build'
@@ -46,7 +52,7 @@ var config = {
     tunnel: true,
     host: 'localhost',
     port: 9000,
-    logPrefix: "Frontend_Devil"
+    logPrefix: "FrontendStart"
 };
 
 gulp.task('webserver', function () {
