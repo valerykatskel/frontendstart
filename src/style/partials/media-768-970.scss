@@ -1,0 +1,9 @@
+/*screen resolutions between 768x and 970px*/
+@media all and (min-width: 768px) and (max-width: 970px){
+  .project{
+    width: 33%;
+    &.logo{
+      width: 33%;
+    }
+  }
+}

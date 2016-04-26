@@ -1,8 +1,8 @@
 /*screen resolutions lower than 320px*/
 @media all and (max-width: 320px){
-	#some-block{
-		display: none;
-		position: relative;
-		padding: $radius;
-	}
+	.project{
+    width: 303px;
+    height: 303px;
+    display: inline-block;
+  }
 }
